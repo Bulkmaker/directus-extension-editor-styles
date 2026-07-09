@@ -1,0 +1,29 @@
+{
+  "name": "directus-extension-editor-styles",
+  "version": "1.0.0",
+  "type": "module",
+  "directus:extension": {
+    "type": "endpoint",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.0.0 || ^11.0.0"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "prepare": "directus-extension build"
+  },
+  "dependencies": {
+    "@directus/extensions-sdk": "^12.0.0",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bulkmaker/directus-extension-editor-styles.git"
+  }
+}
